@@ -1,0 +1,251 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyViewport",
+        "designer|initialView": true,
+        "layout": "fit"
+    },
+    "designerId": "d9341586-1223-48e5-a31a-a5008d4fa930",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "RESTful Admin Panel",
+                "store": "Users"
+            },
+            "designerId": "5ac4d6dd-e2d7-48d7-9e09-29cecef042fa",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "username",
+                        "text": "Username"
+                    },
+                    "designerId": "c8b18438-607f-4f10-8c40-11ccb060aee8"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "firstName",
+                        "text": "First Name",
+                        "flex": 1
+                    },
+                    "designerId": "6a04ff12-5d31-4de3-9487-61a0486cb1ca"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "lastName",
+                        "text": "Last Name",
+                        "flex": 1
+                    },
+                    "designerId": "5eb71650-c8bb-4b5f-84b1-fda2b0fce5bd"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "signupDate",
+                        "text": "Signup Date"
+                    },
+                    "designerId": "ffdb816a-6122-48cf-a2ec-7c7cfa0de811"
+                },
+                {
+                    "type": "Ext.grid.column.Boolean",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "enabled",
+                        "text": "Enabled",
+                        "falseText": "No",
+                        "trueText": "Yes"
+                    },
+                    "designerId": "30fbb61e-d567-4bf0-b7da-1df84a8b82a2"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "designerId": "dbb9fbec-dbf3-4d22-8ef8-3e4287d306de",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "glyph": "",
+                                "iconCls": "",
+                                "text": "New User"
+                            },
+                            "designerId": "a065b728-6c0e-4485-a86e-4f140c5192b0",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "handler",
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "implHandler": [
+                                            "var window = Ext.create('RestfulAdmin.view.UserWindow');"
+                                        ]
+                                    },
+                                    "designerId": "c4aa78a3-59f5-4cc9-966a-3758db18b282"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Action",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center"
+                    },
+                    "designerId": "b90009fb-98e4-4444-a8a0-a6102b501dc3",
+                    "cn": [
+                        {
+                            "type": "actioncolumnitem",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "editUser",
+                                "icon": "resources/edit-user-icon-small.jpg"
+                            },
+                            "designerId": "dc80a13d-915c-439a-9d67-8fe98e8555f8",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "handler",
+                                        "designer|params": [
+                                            "view",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "item",
+                                            "e",
+                                            "record",
+                                            "row"
+                                        ],
+                                        "implHandler": [
+                                            "console.log(view.up('#userWindow'));",
+                                            "",
+                                            "var window = Ext.create('RestfulAdmin.view.UserWindow');",
+                                            "window.down('form').loadRecord(record);"
+                                        ]
+                                    },
+                                    "designerId": "0d0c94f8-c0c7-443f-9407-27116f38b653"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "actioncolumnitem",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "deleteUser",
+                                "icon": "resources/remove-user-icon-small.jpg"
+                            },
+                            "designerId": "a2d81d30-ef87-48ce-8b29-e46f976e8cfe",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "handler",
+                                        "designer|params": [
+                                            "view",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "item",
+                                            "e",
+                                            "record",
+                                            "row"
+                                        ],
+                                        "implHandler": [
+                                            "console.log('deleteUser');",
+                                            "Ext.Msg.confirm('Confirm Delete', ",
+                                            "'Are you sure you want to delete ' + record.get('firstName') + ' ' + record.get('lastName') + '?',",
+                                            "function(buttonId) {",
+                                            "    if (buttonId == 'yes') record.destroy();",
+                                            "});"
+                                        ]
+                                    },
+                                    "designerId": "619cf31c-ccd1-4930-a89d-65934aa3cefa"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

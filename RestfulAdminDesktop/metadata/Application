@@ -1,0 +1,23 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "User"
+        ],
+        "stores": [
+            "Users"
+        ],
+        "views": [
+            "MyViewport",
+            "UserWindow"
+        ],
+        "autoCreateViewport": true,
+        "name": "RestfulAdmin"
+    },
+    "designerId": "application"
+}

@@ -1,0 +1,63 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "groupDir": null,
+        "groupField": null,
+        "model": "User",
+        "storeId": "Users",
+        "designer|userClassName": "Users"
+    },
+    "designerId": "0ef297bd-f876-4cde-af0e-f844c2c1da6d",
+    "cn": [
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "sortProperty": null
+            },
+            "designerId": "03b8e82f-799f-4f3a-9a41-2a63cd5ccc15",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "item"
+                        ],
+                        "implHandler": [
+                            "return item.get('lastName')[0];"
+                        ]
+                    },
+                    "designerId": "87a80c50-3a75-45f6-bcfd-f9fe489014b4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "lastName"
+            },
+            "designerId": "15c41f0d-1104-40e4-b83d-a0bbe13cee08"
+        }
+    ]
+}

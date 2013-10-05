@@ -1,0 +1,159 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "stores": [
+            "Users"
+        ],
+        "designer|userClassName": "Kernel"
+    },
+    "designerId": "d32344d2-e0ea-4010-bb13-bc2f9e940782",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onUserListItemSingletap",
+                "implHandler": [
+                    "this.getUserForm().setRecord(record);",
+                    "this.getUserForm().down('#deleteUserButton').show();",
+                    "this.getMainView().setActiveItem(1);"
+                ],
+                "name": "itemsingletap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "list#userList"
+            },
+            "designerId": "09093445-b746-4850-b02b-41d4d0c43b7a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "userForm",
+                "selector": "userform"
+            },
+            "designerId": "9a1bf136-ae86-430f-8f93-0c988557d8fd"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCancelButtonTap",
+                "implHandler": [
+                    "this.getMainView().setActiveItem(0);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#cancelButton"
+            },
+            "designerId": "4761fadf-cf99-4683-8e38-3660332652bf"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSaveButtonTap",
+                "implHandler": [
+                    "var record = this.getUserForm().getRecord();",
+                    "",
+                    "if (Ext.isEmpty(record)) {",
+                    "    Ext.getStore('Users').add(this.getUserForm().getValues());",
+                    "}",
+                    "else {",
+                    "    this.getUserForm().updateRecord(record);",
+                    "}",
+                    "",
+                    "Ext.getStore('Users').sync();",
+                    "this.getMainView().setActiveItem(0);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#saveButton"
+            },
+            "designerId": "eddbd3f3-56c7-4547-a331-ef73365ac5c5"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNewUserButtonTap",
+                "implHandler": [
+                    "this.getUserForm().reset();",
+                    "this.getUserForm().down('#deleteUserButton').hide();",
+                    "this.getMainView().setActiveItem(1);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#newUserButton"
+            },
+            "designerId": "f79859d2-ea94-45d6-b281-2d684afe5998"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onDeleteUserButtonTap",
+                "implHandler": [
+                    "var record = this.getUserForm().getRecord();",
+                    "",
+                    "Ext.Msg.confirm('User Delete', ",
+                    "'Are you sure you want to delete ' + record.get('firstName') + ' ' + record.get('lastName'),",
+                    "function(buttonId) {",
+                    "    if (buttonId == 'yes') {",
+                    "        var store = Ext.getStore('Users');",
+                    "        store.remove(record);",
+                    "        store.sync();",
+                    "        ",
+                    "        this.getMainView().setActiveItem(0);",
+                    "    }",
+                    "}, this);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#deleteUserButton"
+            },
+            "designerId": "788dcf12-7e90-4af9-867d-e3a30ee994aa"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainView",
+                "selector": "mainview"
+            },
+            "designerId": "3475bc65-abb0-4755-9dc2-6cf17ae6fe07"
+        }
+    ]
+}

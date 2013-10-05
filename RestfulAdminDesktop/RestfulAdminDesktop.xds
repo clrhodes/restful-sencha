@@ -1,0 +1,69 @@
+{
+    "name": "RestfulAdminDesktop",
+    "settings": {},
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "d9341586-1223-48e5-a31a-a5008d4fa930": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "f789dadd-961d-4917-bad0-2970a0261702": {
+            "paths": [
+                "metadata/store/Users",
+                "app/store/override/Users.js",
+                "app/store/Users.js"
+            ],
+            "className": "Users"
+        },
+        "5f17b55a-03f8-48b5-9b9a-60719c36053b": {
+            "paths": [
+                "metadata/model/User",
+                "app/model/override/User.js",
+                "app/model/User.js"
+            ],
+            "className": "User"
+        },
+        "dab99a75-d34a-476f-b919-1a03e00004e9": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "f9f8c5db-fd53-4904-b97e-d8b5df00b21d": {
+            "paths": [
+                "metadata/view/UserWindow",
+                "app/view/override/UserWindow.js",
+                "app/view/UserWindow.js"
+            ],
+            "className": "UserWindow"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "d9341586-1223-48e5-a31a-a5008d4fa930",
+            "f9f8c5db-fd53-4904-b97e-d8b5df00b21d"
+        ],
+        "store": [
+            "f789dadd-961d-4917-bad0-2970a0261702"
+        ],
+        "controller": [],
+        "model": [
+            "5f17b55a-03f8-48b5-9b9a-60719c36053b"
+        ],
+        "resource": [
+            "dab99a75-d34a-476f-b919-1a03e00004e9"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

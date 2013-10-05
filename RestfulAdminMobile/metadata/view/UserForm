@@ -1,0 +1,144 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "ui": "",
+        "designer|userClassName": "UserForm",
+        "designer|userAlias": "userform",
+        "layout": "vbox"
+    },
+    "designerId": "14d2ab0e-a4e9-46ee-bccc-8f9f072d1903",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "bottom"
+            },
+            "designerId": "beab2be5-c6bf-48ef-b80a-a54becae3f40",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "saveButton",
+                        "ui": "action",
+                        "text": "Save"
+                    },
+                    "designerId": "b559038b-08b2-42c8-90ee-b95d0bc3045e"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "cancelButton",
+                        "ui": "confirm",
+                        "text": "Cancel"
+                    },
+                    "designerId": "e6b249b4-9d99-4ae9-9cff-d9d2703ea9f9"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": null,
+                "label": "Username",
+                "name": "username"
+            },
+            "designerId": "448860b5-7e76-4b38-b0a5-ca9261b0c629"
+        },
+        {
+            "type": "Ext.field.Password",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": null,
+                "label": "Password",
+                "name": "password"
+            },
+            "designerId": "6f2d609e-54ba-464a-845f-d2c7653a774c"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": null,
+                "label": "First Name",
+                "name": "firstName"
+            },
+            "designerId": "aba31128-b761-43e7-9279-278a063db403"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": null,
+                "label": "Last Name",
+                "name": "lastName"
+            },
+            "designerId": "956aac0b-013e-4598-a41e-814332d1b780"
+        },
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": null,
+                "label": "Active",
+                "name": "enabled"
+            },
+            "designerId": "96284cdb-d845-4110-91cb-692ca74700e6"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "deleteUserButton",
+                "ui": "decline",
+                "text": "Delete User"
+            },
+            "designerId": "4ef42d42-1fbd-4588-90f6-a4cae926ea53"
+        }
+    ]
+}

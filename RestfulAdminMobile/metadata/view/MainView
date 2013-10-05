@@ -1,0 +1,116 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": "flip",
+        "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
+        "designer|initialView": true,
+        "layout": "card"
+    },
+    "designerId": "8fba7f4a-d6e6-4340-a647-4389c0416f93",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "RESTful Admin"
+            },
+            "designerId": "f542c1fd-49b8-460a-863d-e7a48a1d7439"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "fit"
+            },
+            "designerId": "79a4a73b-fe22-44fd-bda6-dceae815a1fe",
+            "cn": [
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "userList",
+                        "store": "Users",
+                        "grouped": true,
+                        "onItemDisclosure": true
+                    },
+                    "designerId": "08cc8220-1a4c-495a-a35e-76f1fc1c9622",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "implHandler": [
+                                    "<div>{firstName} {lastName}</div>"
+                                ],
+                                "designer|displayName": "itemTpl"
+                            },
+                            "designerId": "dcc40d04-5d2c-407d-8274-7177d56041c1"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "docked": "bottom"
+                    },
+                    "designerId": "9144ce4f-f56c-4f97-abbe-259a403b935d",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "newUserButton",
+                                "iconCls": "add",
+                                "text": "New User"
+                            },
+                            "designerId": "8ba92797-340d-42ed-878f-e3d7a4b09167"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "3104e907-bca3-4473-a1ae-a54766f9ee1f",
+            "masterInstanceId": "14d2ab0e-a4e9-46ee-bccc-8f9f072d1903"
+        }
+    ]
+}

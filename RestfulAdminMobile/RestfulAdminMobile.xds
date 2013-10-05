@@ -1,0 +1,78 @@
+{
+    "name": "RestfulAdminMobile",
+    "settings": {},
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "5764798e-8aa1-4b27-b042-ae5da7369989": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "8fba7f4a-d6e6-4340-a647-4389c0416f93": {
+            "paths": [
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js"
+            ],
+            "className": "MainView"
+        },
+        "854dbb46-02a8-4ce9-9123-2b85cb819c09": {
+            "paths": [
+                "metadata/model/User",
+                "app/model/override/User.js",
+                "app/model/User.js"
+            ],
+            "className": "User"
+        },
+        "0ef297bd-f876-4cde-af0e-f844c2c1da6d": {
+            "paths": [
+                "metadata/store/Users",
+                "app/store/override/Users.js",
+                "app/store/Users.js"
+            ],
+            "className": "Users"
+        },
+        "14d2ab0e-a4e9-46ee-bccc-8f9f072d1903": {
+            "paths": [
+                "metadata/view/UserForm",
+                "app/view/override/UserForm.js",
+                "app/view/UserForm.js"
+            ],
+            "className": "UserForm"
+        },
+        "d32344d2-e0ea-4010-bb13-bc2f9e940782": {
+            "paths": [
+                "metadata/controller/Kernel",
+                "app/controller/override/Kernel.js",
+                "app/controller/Kernel.js"
+            ],
+            "className": "Kernel"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "8fba7f4a-d6e6-4340-a647-4389c0416f93",
+            "14d2ab0e-a4e9-46ee-bccc-8f9f072d1903"
+        ],
+        "store": [
+            "0ef297bd-f876-4cde-af0e-f844c2c1da6d"
+        ],
+        "controller": [
+            "d32344d2-e0ea-4010-bb13-bc2f9e940782"
+        ],
+        "model": [
+            "854dbb46-02a8-4ce9-9123-2b85cb819c09"
+        ],
+        "resource": [
+            "5764798e-8aa1-4b27-b042-ae5da7369989"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
